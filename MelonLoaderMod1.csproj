@@ -1,0 +1,566 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<RootNamespace>MelonLoaderMod1</RootNamespace>
+		<LangVersion>default</LangVersion>
+		<IsPackable>false</IsPackable>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<AssemblyName>MelonLoaderMod1</AssemblyName> 
+		<LangVersion>latest</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+    <Reference Include="BoneLib">
+      <HintPath>F:\SteamLibrary\steamapps\common\BONELAB\Mods\BoneLib.dll</HintPath>
+    </Reference>
+    <Reference Include="LabFusion">
+      <HintPath>F:\SteamLibrary\steamapps\common\BONELAB\Mods\LabFusion.dll</HintPath>
+    </Reference>
+		<Reference Include="Assembly-CSharp">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Assembly-CSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppFacepunch.Steamworks.Win64">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppFacepunch.Steamworks.Win64.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppGoogle.Protobuf">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppGoogle.Protobuf.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppGrpc.Core">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppGrpc.Core.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppHBAO.Demo.Runtime">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppHBAO.Demo.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppHBAO.Demo.Universal.Runtime">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppHBAO.Demo.Universal.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppHBAO.Runtime">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppHBAO.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppHBAO.Universal.Runtime">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppHBAO.Universal.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppMeshBakerCore">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppMeshBakerCore.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppMicrosoft.Extensions.Configuration.Abstractions">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppMicrosoft.Extensions.Configuration.Abstractions.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppMicrosoft.Extensions.Configuration.Binder">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppMicrosoft.Extensions.Configuration.Binder.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppMicrosoft.Extensions.Configuration">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppMicrosoft.Extensions.Configuration.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppMicrosoft.Extensions.DependencyInjection.Abstractions">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppMicrosoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppMicrosoft.Extensions.DependencyInjection">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppMicrosoft.Extensions.DependencyInjection.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppMicrosoft.Extensions.Logging.Abstractions">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppMicrosoft.Extensions.Logging.Abstractions.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppMicrosoft.Extensions.Logging.Configuration">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppMicrosoft.Extensions.Logging.Configuration.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppMicrosoft.Extensions.Logging">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppMicrosoft.Extensions.Logging.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppMicrosoft.Extensions.Options.ConfigurationExtensions">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppMicrosoft.Extensions.Options.ConfigurationExtensions.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppMicrosoft.Extensions.Options">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppMicrosoft.Extensions.Options.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppMicrosoft.Extensions.Primitives">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppMicrosoft.Extensions.Primitives.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppMicrosoft.MixedReality.OpenXR">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppMicrosoft.MixedReality.OpenXR.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppMono.Security">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppMono.Security.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2Cppmscorlib">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2Cppmscorlib.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppNavMeshComponents">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppNavMeshComponents.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppNewtonsoft.Json">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppNewtonsoft.Json.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppOccaSoftware.Exposure">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppOccaSoftware.Exposure.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppOculus.Platform">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppOculus.Platform.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppOculus.VR">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppOculus.VR.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppRayFireAssembly">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppRayFireAssembly.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppRFLib_DotNet_2018">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppRFLib_DotNet_2018.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppRootMotion">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppRootMotion.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSLZ.Algorithms">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppSLZ.Algorithms.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSLZ.Algorithms.Unity">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppSLZ.Algorithms.Unity.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSLZ.Marrow">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppSLZ.Marrow.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSLZ.Marrow.VoidLogic.Core">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppSLZ.Marrow.VoidLogic.Core.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSLZ.Marrow.VoidLogic.Engine">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppSLZ.Marrow.VoidLogic.Engine.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSLZ.ModIO">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppSLZ.ModIO.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSLZ.Serialize">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppSLZ.Serialize.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSystem.Configuration">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppSystem.Configuration.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSystem.Core">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppSystem.Core.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSystem.Data">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppSystem.Data.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSystem">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppSystem.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSystem.IO.Compression">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppSystem.IO.Compression.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSystem.IO.Compression.FileSystem">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppSystem.IO.Compression.FileSystem.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSystem.Net.Http">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppSystem.Net.Http.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSystem.Numerics">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppSystem.Numerics.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSystem.Runtime.CompilerServices.Unsafe">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppSystem.Runtime.CompilerServices.Unsafe.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSystem.Runtime.Serialization">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppSystem.Runtime.Serialization.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSystem.ServiceModel.Internals">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppSystem.ServiceModel.Internals.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSystem.Threading.Channels">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppSystem.Threading.Channels.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSystem.Xml">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppSystem.Xml.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSystem.Xml.Linq">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppSystem.Xml.Linq.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppUltEvents">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppUltEvents.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppUniTask.Addressables">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppUniTask.Addressables.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppUniTask">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppUniTask.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppUniTask.Linq">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppUniTask.Linq.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppURPUnsafe">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppURPUnsafe.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2Cppwebsocket-sharp">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2Cppwebsocket-sharp.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppWhinarn.UnityMeshSimplifier.Runtime">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppWhinarn.UnityMeshSimplifier.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppZLogger">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppZLogger.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppZString">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2CppZString.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2Cpp__Generated">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Il2Cpp__Generated.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Addressables">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.Addressables.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Animation.Rigging">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.Animation.Rigging.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Barracuda.BurstBLAS">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.Barracuda.BurstBLAS.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Barracuda">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.Barracuda.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Burst">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.Burst.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Burst.Unsafe">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.Burst.Unsafe.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Collections">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.Collections.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.InputSystem">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.InputSystem.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Mathematics">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.Mathematics.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.ML-Agents.CommunicatorObjects">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.ML-Agents.CommunicatorObjects.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.ML-Agents">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.ML-Agents.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.ProBuilder">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.ProBuilder.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.ProBuilder.KdTree">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.ProBuilder.KdTree.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.ProBuilder.Poly2Tri">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.ProBuilder.Poly2Tri.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Profiling.Core">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.Profiling.Core.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.Core.Runtime">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.Universal.Runtime">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.Universal.StressLevelZero.VRS">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.RenderPipelines.Universal.StressLevelZero.VRS.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.ResourceManager">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.ResourceManager.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Splines">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.Splines.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Splines.Examples">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.Splines.Examples.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.TextMeshPro">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.TextMeshPro.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Timeline">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.Timeline.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.XR.ARFoundation">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.XR.ARFoundation.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.XR.ARSubsystems">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.XR.ARSubsystems.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.XR.CoreUtils">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.XR.CoreUtils.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.XR.Interaction.Toolkit">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.XR.Interaction.Toolkit.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.XR.Management">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.XR.Management.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.XR.MockHMD">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.XR.MockHMD.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.XR.Oculus">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.XR.Oculus.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.XR.OpenXR">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.XR.OpenXR.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.XR.OpenXR.Features.ConformanceAutomation">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.XR.OpenXR.Features.ConformanceAutomation.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.XR.OpenXR.Features.MetaQuestSupport">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.XR.OpenXR.Features.MetaQuestSupport.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.XR.OpenXR.Features.MockRuntime">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.XR.OpenXR.Features.MockRuntime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.XR.OpenXR.Features.RuntimeDebugger">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\Unity.XR.OpenXR.Features.RuntimeDebugger.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AccessibilityModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.AccessibilityModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AIModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.AIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AndroidJNIModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.AndroidJNIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AnimationModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.AnimationModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ARModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.ARModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AssetBundleModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.AssetBundleModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AudioModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.AudioModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ClothModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.ClothModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ClusterInputModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.ClusterInputModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ClusterRendererModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.ClusterRendererModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.CoreModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CrashReportingModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.CrashReportingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.DirectorModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.DirectorModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.DSPGraphModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.DSPGraphModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GameCenterModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.GameCenterModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GIModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.GIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GridModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.GridModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.HotReloadModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.HotReloadModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ImageConversionModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.ImageConversionModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.IMGUIModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.IMGUIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.InputLegacyModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.InputLegacyModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.InputModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.InputModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.JSONSerializeModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.JSONSerializeModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.LocalizationModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.LocalizationModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.NVIDIAModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.NVIDIAModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ParticleSystemModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.ParticleSystemModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PerformanceReportingModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.PerformanceReportingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.Physics2DModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.Physics2DModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PhysicsModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.PhysicsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ProfilerModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.ProfilerModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ScreenCaptureModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.ScreenCaptureModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SharedInternalsModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.SharedInternalsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SpatialTracking">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SpriteMaskModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.SpriteMaskModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SpriteShapeModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.SpriteShapeModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.StreamingModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.StreamingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SubstanceModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.SubstanceModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SubsystemsModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.SubsystemsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TerrainModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.TerrainModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TerrainPhysicsModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextCoreFontEngineModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextCoreTextEngineModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextRenderingModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.TextRenderingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TilemapModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.TilemapModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TLSModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.TLSModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UI">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.UI.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIElementsModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.UIElementsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIElementsNativeModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.UIElementsNativeModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.UIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UmbraModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.UmbraModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UNETModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.UNETModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityAnalyticsCommonModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityAnalyticsModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityConnectModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.UnityConnectModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityCurlModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.UnityCurlModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityTestProtocolModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestAudioModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.UnityWebRequestModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestTextureModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestWWWModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VehiclesModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.VehiclesModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VFXModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.VFXModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VideoModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.VideoModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VirtualTexturingModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.VirtualTexturingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VRModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.VRModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.WindModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.WindModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.XRModule">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\Il2CppAssemblies\UnityEngine.XRModule.dll</HintPath>
+		</Reference>
+		<Reference Include="MelonLoader">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\net6\MelonLoader.dll</HintPath>
+		</Reference>
+		<Reference Include="0Harmony">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\net6\0Harmony.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppInterop.Runtime">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\net6\Il2CppInterop.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppInterop.Common">
+			<HintPath>F:\SteamLibrary\steamapps\common\BONELAB\MelonLoader\net6\Il2CppInterop.Common.dll</HintPath>
+		</Reference>
+
+	</ItemGroup>
+
+	<PropertyGroup>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="Core.cs" />
+		<Compile Include="Patches.cs" />
+		<Compile Include="TestingMore.cs" />
+		<Compile Include="TestPage.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="CodeHollow.FeedReader" Version="1.2.6" />
+	  <PackageReference Include="TextCopy" Version="6.2.1" />
+	</ItemGroup>
+	
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="COPY &quot;$(TargetPath)&quot; &quot;F:\SteamLibrary\steamapps\common\BONELAB\Mods&quot;" />
+	</Target>
+</Project>
